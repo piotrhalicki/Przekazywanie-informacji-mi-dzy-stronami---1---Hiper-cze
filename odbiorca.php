@@ -11,23 +11,42 @@
 
 	<body>							<!-- "ciało" strony -->
 
-	<h1> 							<!-- "heading", nagłówek -->
+	<h1> 							<!-- "heading", pierwszy nagłówek -->
 	<strong><em>Przekazywanie informacji między stronami</em></strong>
 	</h1>
+		
 		<br>
 	<hr>
 		<br>
+	
 	<h2> 							<!-- nagłówek "mniej" znaczący ;) -->
 	<strong>1 Hiperłącze</strong>
 	</h2>
-
-<?php
+	
+		<br>
+	<hr>
+		<br>
+	
+	<h3>
+	Plik "odbiorca"
+	</h3>
+	
+		<br>
+	<hr>
+		<br>
+		
+<?php								// początek kodu php
 	echo 'Parametr 1 ', '<strong><u>', '(imię)', '</u></strong>', ' ma wartość ', '<strong>' .ucfirst($_GET['name']), '</strong>';
 	echo '<br>';
 	echo 'Parametr 2 ', '<strong><u>', '(nazwisko)', '</u></strong>', ' ma wartość ', '<strong>' .ucfirst($_GET['surname']), '</strong>';
 	echo '<br>';
 	echo 'Parametr 3 ', '<strong><u>', '(miasto)', '</u></strong>', ' ma wartość ', '<strong>' .ucfirst($_GET['city']), '</strong>';
 ?>
+		
+		<br>
+		<br>
+	
+	<a href="index.php">Wróć na poprzednią stronę</a>
 	
 	</body>
 
